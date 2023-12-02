@@ -32,9 +32,9 @@ export const authOptions: NextAuthOptions = {
             await mergeAnonymousCartInUserCart(user.id);
         },
     },
-    pages: {
+    /* pages: {
         signIn: "/login"
-    }
+    } */
 }
 
 const handler = NextAuth(authOptions);

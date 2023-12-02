@@ -65,7 +65,8 @@ export function UserNav({ user }: UserNavProps) {
           </DropdownMenuItem>
         </DropdownMenuContent>
         : <DropdownMenuContent className="w-56" align="end" forceMount>
-          <DropdownMenuItem onClick={() => signIn("", { callbackUrl: pathname })}>
+          {/* <DropdownMenuItem onClick={() => signIn("", { callbackUrl: pathname })}> */}
+          <DropdownMenuItem onClick={() => signIn()}>
             Log in
             {/* <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut> */}
           </DropdownMenuItem>
